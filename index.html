@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistry Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow rounded-5 mx-auto" style="height: 80px; width: 95%; position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1030; 
+        background-color: #f26e22 !important">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="./images/artshb logo.png" class="img-fluid" style="height: 60px;scale: 2;" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold modern-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold modern-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold modern-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold modern-link" href="#artwork">Artwork</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold modern-link" href="#exhibition">Exhibition</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-semibold modern-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold modern-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Landing -->
+    <section class="vh-100 d-flex align-items-center text-center text-white"
+        style="background-image: url('https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">
+                Explore Our <span id="hero-text" class="hero-attract"></span> Collection
+            </h1>
+            <p class="lead">Immerse yourself in a world of color, creativity, and craftsmanship.</p>
+            <a href="#gallery" class="btn btn-lg mt-3 hero-btn">View
+                Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5 bg-light section-animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Gallery</h2>
+            <div class="row g-4" id="galleryRow">
+                <!-- Visible Paintings -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic1.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Sunset Glory</h5>
+                                <p class="text-white-50 small mb-0">Oil on Canvas, 24x36 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic2.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Paintings for Load More -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic3.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic4.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic5.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic6.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-4">
+                <button id="loadMore" class="btn btn-lg mt-3 hero-btn"
+                    style="background-color: #f26e22; color: white;">Load More Paintings</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-white section-animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">About Our Gallery</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./images/artshb logo.png" class="img-fluid rounded shadow" alt="Gallery Overview">
+                </div>
+                <div class="col-md-6">
+                    <p>Our gallery celebrates modern and classical art forms. We showcase unique paintings from emerging
+                        and renowned artists. Each piece tells a story, evoking emotion and inspiring creativity.
+                        Explore our collection and discover the perfect artwork for your space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artwork Section -->
+    <section id="artwork" class="py-5 bg-white section-animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Artwork</h2>
+            <div class="row g-4">
+
+                <!-- Artwork Item 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic7.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artwork Item 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic8.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artwork Item 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic9.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Section -->
+    <section id="exhibition" class="py-5 bg-light section-animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Exhibition</h2>
+            <div class="row g-4">
+
+                <!-- Exhibition 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic10.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibition 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden product-card">
+                        <div class="position-relative">
+                            <img src="./images/pic11.jpg" class="card-img-top img-fluid product-img" alt="Painting 1">
+
+                            <div
+                                class="hover-box d-flex flex-column justify-content-center align-items-center text-center">
+                                <h5 class="fw-bold mb-1 text-white">Ocean Breeze</h5>
+                                <p class="text-white-50 small mb-0">Acrylic, 20x30 in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-light section-animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            What are your gallery hours?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We are open from 10 AM to 7 PM, Monday to Saturday.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Do you offer shipping for paintings?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we ship worldwide with secure packaging.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Can I purchase a painting online?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely! Visit our gallery section and click on the desired painting for purchase
+                            options.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-white section-animate">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg mt-3 hero-btn"
+                            style="background-color: #f26e22; color: white; width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn hero-btn position-fixed"
+        style="bottom: 30px; right: 30px; display: none; z-index: 999;">
+        <i class="fa-solid fa-arrow-up fa-lg"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="./images/artshb logo.png" class="img-fluid" style="height: 60px;scale: 2;" alt="Logo">
+                    </a>
+                    <p>Experience premium art collections from talented artists worldwide.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link fw-semibold modern-link" style="width: fit-content;"
+                                href="#gallery">Gallery</a></li>
+                        <li><a class="nav-link fw-semibold modern-link" style="width: fit-content;"
+                                href="#about">About</a></li>
+                        <li><a class="nav-link fw-semibold modern-link" style="width: fit-content;" href="#faq">FAQ</a>
+                        </li>
+                        <li><a class="nav-link fw-semibold modern-link" style="width: fit-content;"
+                                href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="nav-link fw-semibold modern-link" style="width: fit-content;">Contact Info</h5>
+                    <p class="nav-link fw-semibold modern-link" style="width: fit-content;">Email: hello@artshb.com</p>
+                    <p class="nav-link fw-semibold modern-link" style="width: fit-content;">instagram:
+                        https://instagram.com/artsh.b</p>
+                    <p class="nav-link fw-semibold modern-link" style="width: fit-content;">Facebook:
+                        https://www.facebook.com/hafsa.bilal.505928</p>
+                    <p class="nav-link fw-semibold modern-link" style="width: fit-content;">Whatsapp: +923213904833</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
