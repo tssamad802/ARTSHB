@@ -92,12 +92,14 @@ animateSectionsOnce();
 // animate on scroll
 window.addEventListener("scroll", animateSectionsOnce);
 
-
 // Show/hide button & scroll to top
 const backToTop = document.getElementById("backToTop");
 
-window.onscroll = function() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     backToTop.style.display = "block";
   } else {
     backToTop.style.display = "none";
