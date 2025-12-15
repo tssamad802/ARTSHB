@@ -567,48 +567,114 @@
 }
 
 /* Contact chips */
+
 .contact-box {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.contact-box a {
-  position: relative;
-  padding: 14px 24px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #111;
-  background: #fff;
-  border: 1px solid rgba(242, 110, 34, 0.3);
-  overflow: hidden;
-  transition: 0.4s ease;
+#contact input,
+#contact textarea {
+  border: 2px solid #eee;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.contact-box a::before {
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #f26e22;
+  box-shadow: 0 0 15px rgba(242, 110, 34, 0.4);
+  transform: scale(1.02);
+}
+
+#contact input:hover,
+#contact textarea:hover {
+  border-color: #f26e22;
+  transform: scale(1.01);
+}
+
+#contact .hero-btn::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: -2px;
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(242, 110, 34, 0.35),
+    rgba(255, 255, 255, 0.5),
     transparent
   );
   transform: translateX(-100%);
-  transition: 0.6s ease;
+  transition: transform 0.6s ease;
 }
 
-.contact-box a:hover::before {
+#contact .hero-btn:hover {
+  transform: translateY(-5px) scale(1.05) rotateZ(1deg);
+  box-shadow: 0 15px 40px rgba(242, 110, 34, 0.45);
+}
+
+#contact .hero-btn:hover::before {
   transform: translateX(100%);
+  animation: btnGlow 1s infinite alternate;
 }
 
-.contact-box a:hover {
-  background: #f26e22;
-  color: #fff;
-  transform: translateY(-6px) scale(1.05);
-  box-shadow: 0 20px 40px rgba(242, 110, 34, 0.4);
+/* Animated fade-in for form elements */
+#contact form div,
+#contact form textarea,
+#contact form input,
+#contact form button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+#contact form div:nth-child(1) {
+  animation-delay: 0.3s;
+}
+#contact form div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+#contact form div:nth-child(3) {
+  animation-delay: 0.7s;
+}
+#contact form button {
+  animation-delay: 0.9s;
+}
+
+@keyframes btnGlow {
+  0%,
+  100% {
+    filter: blur(2px);
+  }
+  50% {
+    filter: blur(6px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Contact */
+@media (max-width: 768px) {
+  #contact .hero-btn {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 12px 14px;
+  }
 }
 
 /* Responsive */
