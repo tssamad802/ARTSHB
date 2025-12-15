@@ -567,11 +567,14 @@
 }
 
 /* Contact chips */
-
 .contact-box {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+.contact-box a {
+  text-decoration: none;
 }
 
 #contact input,
@@ -594,6 +597,19 @@
 #contact textarea:hover {
   border-color: #f26e22;
   transform: scale(1.01);
+}
+
+#contact .hero-btn {
+  background: linear-gradient(135deg, #f26e22, #ff934d);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 #contact .hero-btn::before {
@@ -630,38 +646,19 @@
   animation: fadeInUp 0.8s ease forwards;
 }
 
-#contact form div:nth-child(1) {
-  animation-delay: 0.3s;
-}
-#contact form div:nth-child(2) {
-  animation-delay: 0.5s;
-}
-#contact form div:nth-child(3) {
-  animation-delay: 0.7s;
-}
-#contact form button {
-  animation-delay: 0.9s;
-}
+#contact form div:nth-child(1) { animation-delay: 0.3s; }
+#contact form div:nth-child(2) { animation-delay: 0.5s; }
+#contact form div:nth-child(3) { animation-delay: 0.7s; }
+#contact form button { animation-delay: 0.9s; }
 
 @keyframes btnGlow {
-  0%,
-  100% {
-    filter: blur(2px);
-  }
-  50% {
-    filter: blur(6px);
-  }
+  0%, 100% { filter: blur(2px); }
+  50% { filter: blur(6px); }
 }
 
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive Contact */
@@ -676,6 +673,8 @@
     padding: 12px 14px;
   }
 }
+
+
 
 /* Responsive */
 @media (max-width: 992px) {
